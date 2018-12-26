@@ -8,6 +8,8 @@ fn main() {
         samples::internally::run,
         samples::adjacently::run,
         samples::untagged::run,
+        samples::untagged_multi_types::run,
+        samples::untagged_multi_types_wrong::run,
     ];
 
     for s in samples {
