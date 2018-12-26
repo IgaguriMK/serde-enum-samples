@@ -1,3 +1,16 @@
+mod samples;
+
+use failure::Error;
+
 fn main() {
-    println!("Hello, world!");
+    let samples: Vec<fn() -> Result<(), Error>> = vec![samples::enum_default::run];
+
+    for s in samples {
+        match s() {
+            Ok(_) => {}
+            Err(err) => {
+                println!("\nError: {}", err);
+            }
+        }
+    }
 }
