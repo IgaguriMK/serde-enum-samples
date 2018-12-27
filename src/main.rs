@@ -12,6 +12,8 @@ fn main() {
         samples::untagged_multi_types_wrong::run,
         samples::other::run,
         samples::other_null::run,
+        samples::extract_struct::run,
+        samples::extract_multiple_struct::run,
     ];
 
     for s in samples {

@@ -1,5 +1,7 @@
 pub mod adjacently;
 pub mod enum_default;
+pub mod extract_multiple_struct;
+pub mod extract_struct;
 pub mod internally;
 pub mod other;
 pub mod other_null;
